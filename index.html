@@ -1,0 +1,359 @@
+<!doctype html>
+<html lang="pt-br">
+
+	<head>
+		<meta charset="utf-8">
+
+		<title>Oficina Git</title>
+
+		<meta name="description" content="Oficina Git: uma oficina de controle de versão para iniciantes.">
+		<meta name="author" content="Erick Mendonça">
+
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme/white.css" id="theme">
+
+		<link rel="shortcut icon" href="./favicon.ico" />
+
+		<!-- Code syntax highlighting -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<!-- Font Awesome -->
+		<link rel="stylesheet" href="lib/font-awesome/css/font-awesome.min.css">
+
+		<link rel="stylesheet" href="css/override.css">
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+
+		<!--[if lt IE 9]>
+		<script src="lib/js/html5shiv.js"></script>
+		<![endif]-->
+	</head>
+
+	<body>
+
+		<div class="reveal">
+
+			<!-- Any section element inside of this container is displayed as a slide -->
+			<div class="slides">
+				<section>
+					<h1>Oficina <i class="fa fa-git"></i></h1>
+					<p>
+						<small>Criado por <a href="http://erickmendonca.com.br">Erick Mendonça</a></small>
+					</p>
+				</section>
+
+				<section data-background="./images/bg-erick.jpg">
+					<div class="color-white">
+						<h2 class="color-white">Hello!</h2>
+						<p>
+							<p class="fragment"><i class="fa fa-user-secret"></i> Ninja</p>
+							<p class="fragment">Full Stack Developer</p>
+							<p class="fragment">GDG Aracaju Co-organizer</p>
+							<p class="fragment">
+								<i class="fa fa-github"></i>
+								<i class="fa fa-facebook"></i>
+								<i class="fa fa-google-plus"></i> erickmendonca <br>
+								<i class="fa fa-steam"></i> <i class="fa fa-twitter"></i> erickmagnus
+							</p>
+						</p>
+					</div>
+				</section>
+
+				<section>
+					<h2>Agenda</h2>
+					<ul>
+						<li class="fragment"><i class="fa fa-git"></i>
+							<ul>
+								<li>O que é?</li>
+								<li>Como usar?</li>
+							</ul>
+						</li>
+						<li class="fragment"><i class="fa fa-github-square"></i>
+							<ul>
+								<li>O que é?</li>
+								<li>Como usar?</li>
+							</ul>
+						</li>
+					</ul>
+				</section>
+
+				<section>
+					<div class="left-align">
+						<h1><i class="fa fa-git"></i></h1>
+					</div>
+					<div class="right-align">
+						<!-- TODO: Preencher -->
+						<h2>O que é?</h2>
+						<p>1</p>
+						<p>1</p>
+						<p>1</p>
+						<p>1</p>
+						<p>1</p>
+						<p>1</p>
+						<p>1</p>
+					</div>
+				</section>
+
+				<section>
+					<div class="left-align">
+						<h1><i class="fa fa-github-square"></i></h1>
+					</div>
+					<div class="right-align">
+						<!-- TODO: Preencher -->
+						<h2>O que é?</h2>
+						<p>1</p>
+						<p>1</p>
+						<p>1</p>
+						<p>1</p>
+						<p>1</p>
+						<p>1</p>
+						<p>1</p>
+					</div>
+				</section>
+
+				<section>
+					<h2>O que é?</h2>
+						<p>Controle de versão <b>distribuído</b></p>
+						<p><b>Gratuito</b> e open source</p>
+						<p>Inicialmente desenvolvido por <b>Linus Torvalds</b></p>
+						<p>Licença: GNU GPL v2</p>
+						<p>Lançado em 07 de abril de 2005</p>
+				</section>
+
+				<section>
+					<h2>Controle de versão</h2>
+					<img src="./images/controle-de-versao.png" alt="" />
+				</section>
+
+				<section>
+					<p>
+						Controle de versão é um sistema que registra as alterações em um arquivo ou conjunto de arquivos.
+					</p>
+					<p>
+						Permite que você possa recuperar versões anteriores dos arquivos.
+					</p>
+					<p>
+						Podem ser usados com outros tipos de arquivos além de código-fonte.
+					</p>
+				</section>
+
+				<section>
+					<img src="./images/controle-de-versao-2.png" alt="" />
+				</section>
+
+				<section>
+					<h2>Centralizado</h2>
+					<img src="./images/svn.svg" alt="" />
+				</section>
+				<section>
+					<h2>Distribuído</h2>
+					<img src="./images/git.svg" alt="" />
+				</section>
+
+				<section>
+					<h2>Como usar?<h2>
+				</section>
+				<section>
+					<img src="./images/git-commands.png" alt="" />
+				</section>
+				<section>
+					<h1>Calma!</h1>
+				</section>
+
+				<section data-background="./images/well-here-we-are.gif">
+				</section>
+
+				<section data-background="./images/hold-on.gif">
+				</section>
+
+				<section>
+					<h2>git init</h2>
+					<p>O comando git init inicia um novo repositório.</p>
+					<p>Se não for informada uma <i>pasta</i>, ele cria no diretório atual!</p>
+					<p>&nbsp;</p>
+					<code>git init :pasta</code>
+				</section>
+
+				<section>
+					<h2>git clone</h2>
+					<p>O comando git clone cria uma cópia local de um repositório Git.</p>
+					<p>É o método mais comum de obter o código de alguém!</p>
+					<p>&nbsp;</p>
+					<code>git clone :repositório :pasta</code>
+				</section>
+
+
+				<section>
+					<h2>git config</h2>
+					<p>O comando git config te permite alterar algumas configurações de sua instalação Git.</p>
+					<p>&nbsp;</p>
+					<code>git config :opções</code>
+				</section>
+				<section>
+					<code>git config --global user.name "Meu nome"</code>
+					<br><br>
+					<code>git config --global user.email Meu@email</code>
+				</section>
+
+				<section>
+					<h2>git add</h2>
+					<p>O comando git add te permite selecionar quais arquivos serão salvos no controle de versão.</p>
+					<p>&nbsp;</p>
+					<code>git add :arquivo/pasta</code>
+				</section>
+
+				<section>
+				  <h2>git commit</h2>
+				  <p>O comando git commit pega os arquivos selecionados e os salvam no histórico do projeto.</p>
+				  <p>&nbsp;</p>
+				  <code>git commit -m :mensagem</code>
+				</section>
+
+				<section>
+				  <h2>git status</h2>
+				  <p>O comando git status mostra o estado atual da pasta de trabalho.</p>
+				  <p>&nbsp;</p>
+				  <code>git status</code>
+				</section>
+
+				<section>
+				  <h2>git log</h2>
+				  <p>O comando git log permite inspecionar o histórico do projeto.</p>
+				  <p>&nbsp;</p>
+				  <code>git log :opções</code>
+				</section>
+
+				<section>
+				  <h2>git checkout</h2>
+				  <p>O comando git checkout possui vários usos: checar arquivos, commits e branches.</p>
+				  <p>&nbsp;</p>
+				  <code>git checkout :commit/branch</code>
+				</section>
+
+				<section>
+				  <h2>git revert</h2>
+				  <p>O comando git revert desfaz um commit salvo, mas sem alterar o histórico do projeto.</p>
+				  <p>&nbsp;</p>
+				  <code>git revert :commit</code>
+				</section>
+
+				<section>
+				  <h2>git reset</h2>
+				  <p>O comando git reset desfaz alterações em arquivos na pasta de trabalho.</p>
+				  <p>&nbsp;</p>
+				  <code>git reset :opções :arquivo</code>
+				</section>
+
+				<section>
+				  <h2>git clean</h2>
+				  <p>O comando git clean remove arquivos que não estão no repositório da pasta de trabalho.
+</p>
+				  <p>&nbsp;</p>
+				  <code>git clean :opções</code>
+				</section>
+
+				<section>
+				  <h2>git branch</h2>
+				  <p>O comando git branch permite criar ambientes de desenvolvimento isolados dentro do mesmo repositório.</p>
+				  <p>&nbsp;</p>
+				  <code>git branch :nome</code>
+				</section>
+
+				<section>
+				  <h2>git merge</h2>
+				  <p>O comando git merge é uma forma poderosa de integrar mudanças em branches diferentes.</p>
+				  <p>&nbsp;</p>
+				  <code>git merge :opções :branch</code>
+				</section>
+
+				<section>
+				  <h2>git rebase</h2>
+				  <p>O comando git rebase permite mover branches, alterando o histórico para que seja mais linear.</p>
+				  <p>&nbsp;</p>
+				  <code>git rebase :base</code>
+				</section>
+
+				<section>
+				  <h2>git remote</h2>
+				  <p>O comando git remote permite gerenciar as conexões remotas do seu repositório.</p>
+				  <p>&nbsp;</p>
+				  <code>git remote :opções</code>
+				</section>
+
+				<section>
+				  <h2>git fetch</h2>
+				  <p>O comando git fetch baixa uma branch de outro repositório remoto, como todos os commits e arquivos.</p>
+				  <p>&nbsp;</p>
+				  <code>git fetch :remote :branch</code>
+				</section>
+
+				<section>
+				  <h2>git pull</h2>
+				  <p>O comando git pull é uma automatização: ele faz o fetch do repo remoto e o merge com o branch atual.</p>
+				  <p>&nbsp;</p>
+				  <code>git pull :opções :remote :branch</code>
+				</section>
+
+				<section>
+				  <h2>git push</h2>
+				  <p>O comando git push move uma branch local para outro repositório.</p>
+				  <p>Envia o seu código para outro lugar!</p>
+				  <p>&nbsp;</p>
+				  <code>git push :remote :branch</code>
+				</section>
+
+				<section class="left-align">
+					<h1>THE END</h1>
+					<p>
+						- <a href="https://github.com/erickmendonca/git-workshop">Slides no GitHub</a> <br>
+						- <a href="https://training.github.com/kit/downloads/pt/github-git-cheat-sheet.pdf">Git cheat sheet</a> <br>
+						- <a href="https://git-scm.com/book/pt-br/v1">eBook gratuito Pro Git</a> <br>
+					</p>
+				</section>
+
+			</div>
+
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.js"></script>
+
+		<script>
+
+			// Full list of configuration options available at:
+			// https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				history: true,
+				center: true,
+
+				transition: 'slide', // none/fade/slide/convex/concave/zoom
+
+				// Optional reveal.js plugins
+				dependencies: [
+					{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+					{ src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/highlight/highlight.js', async: true, condition: function() { return !!document.querySelector( 'pre code' ); }, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: 'plugin/zoom-js/zoom.js', async: true },
+					{ src: 'plugin/notes/notes.js', async: true }
+				]
+			});
+
+		</script>
+
+	</body>
+</html>
