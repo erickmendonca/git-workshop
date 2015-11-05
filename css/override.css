@@ -12,7 +12,11 @@
 }
 
 .slides .noborder {
-  background:none; 
-  border:none; 
+  background:none;
+  border:none;
   box-shadow:none;
+}
+
+.slides .big  {
+  font-size: "x-large";
 }
