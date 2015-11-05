@@ -308,6 +308,84 @@
 				  <code>git rebase :base</code>
 				</section>
 
+				<section data-background="./images/revision-cat.gif">
+					<h2 class="color-white">Hora da revisão</h2>
+				</section>
+
+				<section>
+					<img src="./images/git-history-0.svg" class="noborder">
+				</section>
+
+				<section>
+					<code>git init</code>
+					<img src="./images/git-history-1.svg" class="noborder">
+				</section>
+
+				<section>
+					<code>git add .<br>git commit -m "C1"</code>
+					<img src="./images/git-history-2.svg" class="noborder">
+				</section>
+
+				<section>
+					<code>git commit -m "C2"</code>
+					<img src="./images/git-history-3.svg" class="noborder">
+				</section>
+
+				<section>
+					<code>git branch idea<br>git checkout idea<br>git commit -m "C3"</code>
+					<img src="./images/git-history-4.svg" class="noborder">
+				</section>
+
+				<section>
+					<code>git checkout master<br>git checkout -b hotfix<br>git commit -m "C4"</code>
+					<img src="./images/git-history-5.svg" class="noborder">
+				</section>
+
+				<section>
+					<code>git checkout master<br>git merge hotfix</code>
+					<img src="./images/git-history-6.svg" class="noborder">
+				</section>
+
+				<section>
+					<code>git merge idea</code>
+					<img src="./images/git-history-7.svg" class="noborder">
+				</section>
+
+				<section>
+					<code>git branch -D hotfix</code>
+					<img src="./images/git-history-8.svg" class="noborder">
+				</section>
+
+				<section>
+					<code>git tag v1</code>
+					<img src="./images/git-history-9.svg" class="noborder">
+				</section>
+
+				<section>
+					<code>git commit -m "C6"</code>
+					<img src="./images/git-history-10.svg" class="noborder">
+				</section>
+
+				<section>
+					<code>git checkout -b refactor<br>git commit -m "C7"</code>
+					<img src="./images/git-history-11.svg" class="noborder">
+				</section>
+
+				<section>
+					<code>git checkout master<br>git commit -m "C8"<br>git commit -m "C9"</code>
+					<img src="./images/git-history-12.svg" class="noborder">
+				</section>
+
+				<section>
+					<code>git checkout refactor<br>git commit -m "C10"</code>
+					<img src="./images/git-history-13.svg" class="noborder">
+				</section>
+
+				<section>
+					<code>git rebase master</code>
+					<img src="./images/git-history-14.svg" class="noborder">
+				</section>
+
 				<section>
 				  <h2>git remote</h2>
 				  <p>O comando git remote permite gerenciar as conexões remotas do seu repositório.</p>
@@ -340,11 +418,13 @@
 				<section class="left-align">
 					<h2>Referências</h2>
 					<p>
-						- <a href="https://speakerdeck.com/bluekw810388/git">GIT, by Scott Chacon</a>
-						- <a href="https://www.atlassian.com/git/tutorials/">Atlassian Git Tutorials</a>
-						- <a href="http://nvie.com/posts/a-successful-git-branching-model/">Git branching model</a>
-						- <a href="https://github.com/blog/2019-how-to-undo-almost-anything-with-git">How to undo (almost) anything in Git</a>
-						- <a href="https://training.github.com/kit/">GitHub Training</a>
+						- <a href="https://speakerdeck.com/bluekw810388/git">GIT, by Scott Chacon</a> <br>
+						- <a href="https://www.atlassian.com/git/tutorials/">Atlassian Git Tutorials</a> <br>
+						- <a href="http://nvie.com/posts/a-successful-git-branching-model/">Git branching model</a> <br>
+						- <a href="https://github.com/blog/2019-how-to-undo-almost-anything-with-git">How to undo (almost) anything in Git</a> <br>
+						- <a href="https://training.github.com/kit/">GitHub Training</a> <br>
+						- <a href="https://github.com/erickmendonca/git-flight-rules">Git Flight Rules</a> <br>
+						- <a href="https://www.codeschool.com/courses/try-git">Curso gratuito: Try Git</a> <br>
 
 					</p>
 				</section>
