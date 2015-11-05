@@ -200,7 +200,7 @@
 					<p>O comando git init inicia um novo repositório.</p>
 					<p>Se não for informada uma <i>pasta</i>, ele cria no diretório atual!</p>
 					<p>&nbsp;</p>
-					<pre><code>git init :pasta</code></pre>
+					<code>git init :pasta</code>
 				</section>
 
 				<section>
@@ -389,28 +389,68 @@
 				</section>
 
 				<section>
-				  <h2>git remote</h2>
+					<h2>diff</h2>
+					<p>
+						O comando git diff exibe as mudanças entre commits, árvores e elementos dentro do repositório.
+					</p>
+					<p>
+						&nbsp;
+					</p>
+					<code>git diff :opções</code>
+				</section>
+
+				<section>
+					<code>git diff</code>
+					<p>
+						Diferenças entre os arquivo atuais e suas últimas versões adicionadas.
+					</p>
+				</section>
+
+				<section>
+					<code>git diff src/</code><br>
+					<code>git diff LICENSE</code>
+					<p>
+						Diferenças entre a pasta ou arquivo e suas últimas versões adicionadas.
+					</p>
+				</section>
+
+				<section>
+					<code>git diff --cached master</code><br>
+					<code>git diff --cached HEAD</code><br>
+					<code>git diff --cached 22981ec</code>
+					<p>
+						Diferenças entre os arquivos adicionados e um outro commit.
+					</p>
+					<p>
+						master: a branch master<br>
+						HEAD: ponto atual do repositório<br>
+						22981ec: um commit antigo
+					</p>
+				</section>
+
+				<section>
+				  <h2>remote</h2>
 				  <p>O comando git remote permite gerenciar as conexões remotas do seu repositório.</p>
 				  <p>&nbsp;</p>
 				  <code>git remote :opções</code>
 				</section>
 
 				<section>
-				  <h2>git fetch</h2>
+				  <h2>fetch</h2>
 				  <p>O comando git fetch baixa uma branch de outro repositório remoto, como todos os commits e arquivos.</p>
 				  <p>&nbsp;</p>
 				  <code>git fetch :remote :branch</code>
 				</section>
 
 				<section>
-				  <h2>git pull</h2>
+				  <h2>pull</h2>
 				  <p>O comando git pull é uma automatização: ele faz o fetch do repo remoto e o merge com o branch atual.</p>
 				  <p>&nbsp;</p>
 				  <code>git pull :opções :remote :branch</code>
 				</section>
 
 				<section>
-				  <h2>git push</h2>
+				  <h2>push</h2>
 				  <p>O comando git push move uma branch local para outro repositório.</p>
 				  <p>Envia o seu código para outro lugar!</p>
 				  <p>&nbsp;</p>
